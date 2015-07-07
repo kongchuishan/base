@@ -8,14 +8,14 @@
         if(n<=1){//如果arr的长度小于等于1则直接返回arr
             return arr;
         }
-        var tmp=null;//定义一个临时变量，作交换数据用；
+        var temp=null;//定义一个临时变量，作交换数据用；
         var bFlag=false;//判断是否排序
         for(var i=0;i<n-1;i++){ //外层循环n-1次
             for(var j=0;j<n-1-i;j++){//内层循环n-1-i次，每次循环都将最大的值放到n-1-i的位置上
                 if(arr[j]>arr[j+1]){
-                    tmp=arr[j];
+                    temp=arr[j];
                     arr[j]=arr[j+1];
-                    arr[j+1]=tmp;
+                    arr[j+1]=temp;
                     bFlag=true;
                 }
             }
