@@ -5,6 +5,9 @@
     var arr=[12,3,43,11,56,90,7,66,82];
     function bubbleSort(arr){
         var n=arr.length;//获取数组的长度，既有n个数在排序；
+        if(n<=1){//如果arr的长度小于等于1则直接返回arr
+            return arr;
+        }
         var tmp=null;//定义一个临时变量，作交换数据用；
         var bFlag=false;//判断是否排序
         for(var i=0;i<n-1;i++){ //外层循环n-1次
